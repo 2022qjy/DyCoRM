@@ -1,72 +1,92 @@
 <div align="center">
 
-# DyCoRM: Dynamic Criterion-Aware Reward Modeling for Text-to-Image Generation
+  <div>
+    <a href="https://openreview.net/forum?id=zzottG3vbp"><img src="https://img.shields.io/badge/Paper-OpenReview-blue" alt="Paper on OpenReview" /></a>
+    <img src="https://img.shields.io/badge/NeurIPS-2026%20Poster-orange" alt="NeurIPS 2026 Poster" />
+    <a href="#training-dataset"><img src="https://img.shields.io/badge/Dataset-Coming%20Soon-lightgrey" alt="Datasets coming soon" /></a>
+    <a href="#model-weights"><img src="https://img.shields.io/badge/Model%20Weights-Coming%20Soon-lightgrey" alt="Final model weights coming soon" /></a>
+  </div>
 
-**NeurIPS 2026 Poster**
+  <h1>DyCoRM: Dynamic Criterion-Aware Reward Modeling for Text-to-Image Generation</h1>
 
-Jiaying Qian<sup>*</sup>, Ziheng Jia<sup>*</sup>, Qian Zhang, Zicheng Zhang,<br>
-Jiayi Guo, Junqi Zhang, Guangtao Zhai, Xiongkuo Min<sup>&dagger;</sup>
+  <p><em>[NeurIPS 2026 Poster] Official datasets and final model weights for DyCoRM</em></p>
 
-Shanghai Jiao Tong University
+  <div>
+    <a href="https://github.com/2022qjy">Jiaying Qian</a><sup>1*</sup>,
+    Ziheng Jia<sup>1*</sup>,
+    Qian Zhang<sup>1</sup>,
+  </div>
 
-<sup>*</sup>Equal contribution. <sup>&dagger;</sup>Corresponding author.
+  <div>
+    <a href="https://zzc-1998.github.io/">Zicheng Zhang</a><sup>2</sup>,
+    Jiayi Guo<sup>1</sup>,
+    Junqi Zhang<sup>1</sup>,
+  </div>
 
-[Paper](https://openreview.net/forum?id=zzottG3vbp) | DyCoDataset-20K: TBA | DyCoBench-1K: TBA | Model Weights: TBA
+  <div>
+    <a href="https://ee.sjtu.edu.cn/en/FacultyDetail.aspx?id=24&amp;infoid=153&amp;flag=153">Guangtao Zhai</a><sup>1</sup>,
+    <a href="https://scholar.google.com/citations?user=91sjuWIAAAAJ&amp;hl=zh-CN&amp;oi=ao">Xiongkuo Min</a><sup>1#</sup>
+  </div>
+
+  <br />
+
+  <div><sup>1</sup>Shanghai Jiao Tong University. <sup>2</sup>Shanghai Artificial Intelligence Laboratory</div>
+  <div><sup>*</sup>Equal contribution. <sup>#</sup>Corresponding author.</div>
+
+  <!-- Add the actual GitHub stars and arXiv badges when their URLs are confirmed. -->
+
+  <!-- Uncomment after adding the dataset overview image.
+  <div style="width: 100%; text-align: center; margin: auto;">
+    <img style="width: 100%;" src="assets/dataset_overview.png" alt="DyCoDataset-20K overview" />
+  </div>
+  -->
+
+  <!-- Uncomment after adding the framework image.
+  <div style="width: 100%; text-align: center; margin: auto;">
+    <img style="width: 100%;" src="assets/framework.png" alt="DyCoRM framework" />
+  </div>
+  -->
 
 </div>
 
-## Release Status
+<div align="left">
 
-This repository provides the datasets and final model weights accompanying our paper. The planned resources are DyCoDataset-20K, DyCoBench-1K, and the final DyCoRM checkpoint. Download links and final package details will be added when the corresponding resources are available.
-
-| Resource | Planned contents | Status | Download |
-| --- | --- | --- | --- |
-| **DyCoDataset-20K** | Generated images, prompts, image-pair metadata, human-written criteria, criterion-level and overall preference annotations, and training split manifests | Pending release | TBA |
-| **DyCoBench-1K** | Held-out benchmark images, evaluation pairs, criteria, preference labels, and evaluation manifests for single-criterion, multi-criteria, and overall evaluation | Pending release | TBA |
-| **DyCoRM final weights** | Stage-2 criterion-conditioned pairwise comparison checkpoint, including the comparison head and model configuration | Pending release | TBA |
+## TODO
 
 - [ ] Release DyCoDataset-20K.
 - [ ] Release DyCoBench-1K.
 - [ ] Release the final DyCoRM weights.
 
+All three resources are pending release. Download links will be added below when available.
+
 ## Introduction
 
 DyCoRM models text-to-image preferences under task-relevant, fine-grained criteria. It separates reward modeling into two stages: grounding criteria from the prompt and candidate image pair, then comparing the images under a supplied criterion or criterion set.
 
-This release includes:
+## Training Dataset
 
-- **DyCoDataset-20K**, a dataset with dynamic criteria and human preference annotations.
-- **DyCoBench-1K**, a held-out benchmark for criterion-aware image comparison.
-- **Final DyCoRM model weights**, for criterion-conditioned pairwise comparison.
-
-## Dataset
-
-### DyCoDataset-20K
+- **DyCoDataset-20K:** TBA (pending release).
+- **Human-rated annotations and split manifests:** TBA (pending release).
 
 Each annotated comparison contains a text prompt, two candidate images, a set of human-written criteria, and the associated criterion-level and overall preference labels. Preference labels distinguish image A, image B, and a tie.
 
-The release will document the annotation fields, label encoding, image identifiers, image-generation sources, and split membership. Final exported sample counts and file sizes will be listed with the downloadable package.
+The release will include images, prompts, image-pair metadata, criteria, preference annotations, and training split manifests. Annotation fields, label encoding, final sample counts, and package sizes will be documented with the download.
 
-**Download:** TBA.
+## Benchmark
 
-### DyCoBench-1K
+- **DyCoBench-1K:** TBA (pending release).
 
 DyCoBench-1K evaluates single-criterion, multi-criteria, and overall preference prediction. The reported split is image-disjoint from both training stages; textual prompts and source-generator families may overlap across splits.
 
 The benchmark release will provide the evaluation manifests, ground-truth labels, and metric definitions for comparison under supplied criteria.
 
-**Download:** TBA.
-
-
 ## Model Weights
 
-DyCoRM uses InternVL-3-8B-Instruct, with Qwen2.5-7B as its language backbone. We plan to release the final criterion-conditioned pairwise comparison checkpoint:
+- **Final DyCoRM model weights:** TBA (pending release).
 
-| Checkpoint | Input | Output | Download |
-| --- | --- | --- | --- |
-| **Final DyCoRM: criterion-conditioned comparison** | Text prompt, two candidate images, and a criterion condition | Pairwise preference prediction | TBA |
+DyCoRM uses InternVL-3-8B-Instruct, with Qwen2.5-7B as its language backbone. The released checkpoint will contain the final criterion-conditioned pairwise comparison model, including its comparison head and model configuration.
 
-The final DyCoRM model compares an image pair rather than assigning a context-independent absolute score to a single image. Checkpoint format, base-model dependencies, and loading instructions will be provided with the released weights.
+The model takes a text prompt, two candidate images, and a criterion condition to predict their relative preference. Checkpoint format, base-model dependencies, and loading instructions will accompany the weights.
 
 ## Citation
 
@@ -85,3 +105,5 @@ If you use DyCoRM, DyCoDataset-20K, or DyCoBench-1K, please cite our paper. The 
 ## Contact
 
 For questions about the project, please contact Jiaying Qian at [2022qjy@sjtu.edu.cn](mailto:2022qjy@sjtu.edu.cn).
+
+</div>
