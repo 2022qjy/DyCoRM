@@ -18,14 +18,14 @@
   </div>
 
   <div>
-    <a href="https://zzc-1998.github.io/">Zicheng Zhang</a><sup>2</sup>,
+    Zicheng Zhang</a><sup>2</sup>,
     Jiayi Guo<sup>1</sup>,
     Junqi Zhang<sup>1</sup>,
   </div>
 
   <div>
-    <a href="https://ee.sjtu.edu.cn/en/FacultyDetail.aspx?id=24&amp;infoid=153&amp;flag=153">Guangtao Zhai</a><sup>1</sup>,
-    <a href="https://scholar.google.com/citations?user=91sjuWIAAAAJ&amp;hl=zh-CN&amp;oi=ao">Xiongkuo Min</a><sup>1#</sup>
+    Guangtao Zhai</a><sup>1</sup>,
+    Xiongkuo Min</a><sup>1#</sup>
   </div>
 
   <br />
